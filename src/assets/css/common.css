@@ -691,9 +691,7 @@ position: -webkit-sticky;
 position: sticky;
 top: 5px;
 }
-	
 
-	
 /* オーバーレイ */
 #overlay-background {
 position:fixed;
@@ -705,7 +703,7 @@ background-color:#0e0e0e;
 opacity:0.5;
 z-index:1000
 }
-#sample-overlay {
+#isystk-overlay {
 position: absolute;
 top: 10%;
 left: 10%;
@@ -717,11 +715,11 @@ opacity: 0;
 visibility: hidden;
 transition: .1s linear;
 }
-#sample-overlay .wrap {
+#isystk-overlay .wrap {
 background-color: #fff;
 padding: 10px;
 }
-#sample-overlay.open {
+#isystk-overlay.open {
 opacity: 1;
 visibility: visible;
 animation: example .5s ease 0s 1 forwards;
@@ -737,20 +735,20 @@ animation: example .5s ease 0s 1 forwards;
 		transform: scaleY(1) scaleX(1);
 	}
 }
-#sample-overlay .title{
+#isystk-overlay .title{
 margin-bottom: 5px;
 padding: 5px;
 border-bottom: solid 1px #ccc;
 font-size: 20px;
 }
-#sample-overlay td {
+#isystk-overlay td {
 padding: 10px;
 }
-#sample-overlay .close {
+#isystk-overlay .close {
 position: absolute;
 right: 0;
 margin: 5px;
-zoom: 180%;
+zoom: 100%;
 color: #333;
 }
 	

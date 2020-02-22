@@ -67,7 +67,7 @@ $(function() {
 	// ページ内見出しナビゲーション
 	$('#sticky-navigator').stickyNavigator({wrapselector: '.entry-content'});
 
-	// ページ内見出しナビゲーション
+	// オーバーレイ表示
 	$('.js-overlay').isystkOverlay();
 
 });
