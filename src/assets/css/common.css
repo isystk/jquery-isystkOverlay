@@ -722,9 +722,9 @@ padding: 10px;
 .isystk-overlay.open {
 opacity: 1;
 visibility: visible;
-animation: example .5s ease 0s 1 forwards;
+animation: open-animation .5s ease 0s 1 forwards;
 }
-@keyframes example {
+@keyframes open-animation {
 	0% {
 		transform: scaleY(.1) scaleX(.1);
 	}
