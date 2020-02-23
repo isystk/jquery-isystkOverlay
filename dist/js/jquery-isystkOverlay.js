@@ -17,13 +17,11 @@
 
 			// ダイアログ非表示
 			var showDialog = this.showDialog = function() {
-				if ($('#overlay-background').length === 0) {
-					$('body').append('<div id="overlay-background"></div>');
-					$('#overlay-background').click(function() {
-						closeDialog();
-					});
-				}
-	
+				$('body').append('<div id="overlay-background"></div>');
+				$('#overlay-background').click(function() {
+					closeDialog();
+				});
+				
 				panel.addClass('open');
 				$('#overlay-background').fadeIn();
 				
@@ -36,7 +34,9 @@
 			var closeDialog = function() {
 				loading = false;
 				panel.removeClass('open');
-				$('#overlay-background').fadeOut();
+				$('#overlay-background').fadeOut(500, function() {
+					$(this).remove();
+				});
 				if (settings.closeCallback) {
 					settings.closeCallback();
 				}
